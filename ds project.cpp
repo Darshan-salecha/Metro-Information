@@ -295,7 +295,7 @@ void newLine()
         }
         struct name*ptr=head;
         outtextxy(200,0,"FROM STATION");
-        outtextxy(90,gety()+textheight("A"),"Please select valid station number from list");
+        outtextxy(90,gety()+textheight("A"),"Please select valid station number from list: ");
         line(3,gety()+3*textheight("A"),3,gety()+22*textheight("A"));
         line(250,gety()+3*textheight("A"),250,gety()+22*textheight("A"));
         int i=3,f_no,t_no;char id[5],fno[5],tno[5];
@@ -317,7 +317,7 @@ void newLine()
             if(i>41)
                 break;
         }
-        outtextxy(90,450,"Please enter valid station number:");
+        outtextxy(90,450,"Please enter valid station number: ");
         moveto(450,450);
         getGrString(fno);
         f_no=atoi(fno);
@@ -356,10 +356,10 @@ void newLine()
             outtextxy(100,200,"INVALID STATION SELECTED!!");
         else{
         diff=abs(t_no-f_no);
-        outtextxy(200,50,"FARE INFORMATION");
-        outtextxy(80,120,"FROM ");
-        outtextxy(240,120,"TO");
-        outtextxy(400,120,"FARE");
+        outtextxy(200,50,"FARE INFORMATION:");
+        outtextxy(80,120,"FROM :");
+        outtextxy(240,120,"TO:");
+        outtextxy(400,120,"FARE:");
         ptr=head;
         while(ptr!=NULL)
         {
@@ -405,7 +405,7 @@ void newLine()
             count++;
         }
         struct name*ptr=head;
-        outtextxy(200,0,"STATIONS INFO");
+        outtextxy(200,0,"**STATIONS INFO**");
         line(3,gety()+3*textheight("A"),3,gety()+22*textheight("A"));
         line(250,gety()+3*textheight("A"),250,gety()+22*textheight("A"));
         i=3;
